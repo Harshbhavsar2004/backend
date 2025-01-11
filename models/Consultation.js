@@ -8,7 +8,7 @@ const consultationSchema = new mongoose.Schema({
   city: { type: String, required: true },
   email: { type: String, required: true },
   type: { type: String, required: true }, // 'homes' or 'commercial'
-});
+}, { timestamps: true });
 
 const Consultation = mongoose.model('Consultation', consultationSchema);
 

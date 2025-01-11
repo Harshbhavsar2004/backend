@@ -8,5 +8,6 @@ router.post('/login', loginUser);
 router.get('/get-user-info', validateToken, getUserInfo);
 router.get('/', getAllUsers);
 router.put('/:id', updateUserRole);
+router.get('/all-users', getAllUsers);
 
 export default router; 
